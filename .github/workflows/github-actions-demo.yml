@@ -17,11 +17,11 @@ jobs:
       - name: List files in the repository
         run: |
           ls ${{ github.workspace }}
-      #- name: checkout documentation branch
-      #  run: git checkout dev
-      - name: rebase documentation branch
-        run: git rebase main
-      - name: setup filter branch documentation branch
+      - name: checkout documentation branch
+        run: git checkout dev
+      #- name: rebase documentation branch
+      #  run: git rebase main
+      - name: setup filter-branch on documentation branch
         run: git filter-branch --subdirectory-filter documentation
       - name: List files in the repository
         run: |
