@@ -20,7 +20,7 @@ jobs:
       #- name: checkout documentation branch
       #  run: git checkout dev
       - name: rebase documentation branch
-        run: git fetch --all && git rebase origin/main
+        run: git fetch --all && git rebase main
       - name: setup filter branch documentation branch
         run: git filter-branch --subdirectory-filter documentation
       
