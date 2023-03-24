@@ -18,6 +18,5 @@ jobs:
         run: |
           ls ${{ github.workspace }}
       - name: rebase documentation branch
-        run: git rebase main
-
+        run: git branch | cat
       - run: echo "🍏 This job's status is ${{ job.status }}."
