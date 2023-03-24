@@ -17,4 +17,7 @@ jobs:
       - name: List files in the repository
         run: |
           ls ${{ github.workspace }}
+      - name: rebase documentation branch
+        run: git rebase main
+
       - run: echo "🍏 This job's status is ${{ job.status }}."
