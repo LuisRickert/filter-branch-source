@@ -18,7 +18,7 @@ jobs:
         run: |
           ls ${{ github.workspace }}
       - name: checkout documentation branch
-        run: git checkout dev && 
+        run: git checkout dev
       - name: rebase documentation branch
         run: git rebase main
       - name: setup filter branch documentation branch
